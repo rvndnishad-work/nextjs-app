@@ -10,6 +10,17 @@ app
   .then(() => {
     const server = express();
 
+    const path = require("path");
+    const options = {
+      root: path.join(__dirname, "/static"),
+      headers: {
+        "Content-Type": "text/plain;charset=UTF-8"
+      }
+    };
+    server.get("/robots.txt", (req, res) =>
+      res.status(200).sendFile("robots.txt", options)
+    );
+
     server.get("*", (req, res) => {
       return handle(req, res);
     });

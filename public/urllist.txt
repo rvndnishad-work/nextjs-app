@@ -1,0 +1,9 @@
+https://testapp-nextjs.herokuapp.com/
+https://testapp-nextjs.herokuapp.com/results
+https://testapp-nextjs.herokuapp.com/latest-job
+https://testapp-nextjs.herokuapp.com/admit-card
+https://testapp-nextjs.herokuapp.com/admission
+https://testapp-nextjs.herokuapp.com/answer-key
+https://testapp-nextjs.herokuapp.com/syllabus
+https://testapp-nextjs.herokuapp.com/contact-us
+https://testapp-nextjs.herokuapp.com/about-us
