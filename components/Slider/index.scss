@@ -1,0 +1,97 @@
+@import "../../styles/_variables";
+@import "~slick-carousel/slick/slick.css";
+// @import "~slick-carousel/slick/slick-theme.css";
+
+.latest-news {
+  .react-slider-next-arrow,
+  .slick-next,
+  .react-slider-prev-arrow,
+  .slick-prev,
+  .slick-dots {
+    display: none !important;
+  }
+
+  h3 {
+    outline: none;
+
+    color: #fff;
+    font-size: 14px;
+    margin: 3px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    cursor: grab;
+  }
+  > .news-header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 20px;
+    padding: 10px;
+    letter-spacing: 6px;
+    word-spacing: 10px;
+    background: $red-sixth;
+    text-transform: uppercase;
+    color: $white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 999;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  > .news-header {
+    grid-column: span 2;
+  }
+
+  .slick-list {
+    height: 100% !important;
+    outline: none;
+  }
+
+  .slick-slide {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: table !important;
+    outline: none;
+    //background: lighten(#2d3649, 10%);
+    background: #e7e7e7;
+
+    :focus {
+      outline: none;
+    }
+
+    h3 {
+      padding: 0;
+      height: 6.8em;
+      display: grid;
+      grid-template-rows: 100%;
+      grid-template-columns: 100%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 14px;
+      // font-size: 13px;
+      color: #fff;
+      word-spacing: 1px;
+      //background-color: lighten($blue-dark, 15%);
+      //background-color: lighten($blue-dark, 15%);
+      //background: darken(#fff, 0%);
+      // color: #2d3649;
+      background: linear-gradient(
+        135deg,
+        darken(#0079bf, 5%),
+        lighten(#5067c5, 10%)
+      );
+      > button {
+        display: block;
+      }
+    }
+  }
+}

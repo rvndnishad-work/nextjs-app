@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./index.scss";
 import Header from "../Header";
 import Navbar from "../Navbar";
+import Slider from "../Slider";
 
 export default class index extends Component {
   render() {
@@ -14,7 +15,9 @@ export default class index extends Component {
           <Navbar />
         </div>
         <div className="content">{this.props.children}</div>
-        <div className="sidebar"> Sidebar</div>
+        <div className="sidebar">
+          <Slider />
+        </div>
       </div>
     );
   }
