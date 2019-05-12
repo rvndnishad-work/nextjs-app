@@ -1,0 +1,19 @@
+<svg width="359" height="71" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_2_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="#fafafe" id="canvas_background" height="73" width="361" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text filter="url(#svg_2_blur)" stroke="#000" transform="matrix(0.9322335523174842,0,0,1,0.029132425785064697,1.125) " font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="57" id="svg_2" y="57.615625" x="7.926817" stroke-width="0" fill="#2d3649">सरकारी रिजल्ट</text>
+ </g>
+</svg>

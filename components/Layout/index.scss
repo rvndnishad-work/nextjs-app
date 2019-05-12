@@ -1,0 +1,76 @@
+@import "../../styles/_variables";
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 61px auto;
+  grid-template-columns: 97px repeat(11, 1fr);
+  grid-template-areas:
+    "h h h h h h m m m m m m"
+    "c c c c c c c c c c s s"
+    "c c c c c c c c c c s s";
+
+  > .header {
+    grid-area: h;
+  }
+  > .menu {
+    overflow-y: none;
+    background: #fff;
+    grid-area: m;
+  }
+  > .content {
+    background: #e7e7e7;
+    //background: #fff;
+    box-shadow: inset 0 20px 5px -20px rgba(0, 0, 0, 0.3);
+    grid-area: c;
+
+    background-size: cover;
+    background-attachment: fixed, fixed;
+  }
+  > .sidebar {
+    background: $bg-color;
+    overflow-y: hidden;
+    grid-area: s;
+  }
+}
+
+@media only screen and (max-width: 767px),
+  only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 61px auto;
+    grid-template-columns: 97px repeat(11, 1fr);
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "c c c c c c c c c c c c"
+      "c c c c c c c c c c c c";
+
+    > .header {
+      grid-area: h;
+    }
+    > .menu {
+      overflow-y: none;
+      background: #fff;
+      grid-area: m;
+      display: none;
+    }
+    > .content {
+      background: #e7e7e7;
+      //background: #fff;
+      box-shadow: inset 0 20px 5px -20px rgba(0, 0, 0, 0.3);
+      grid-area: c;
+
+      background-size: cover;
+      background-attachment: fixed, fixed;
+    }
+    > .sidebar {
+      background: $bg-color;
+      overflow-y: hidden;
+      grid-area: s;
+      display: none;
+    }
+  }
+}

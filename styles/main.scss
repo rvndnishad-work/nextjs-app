@@ -1,0 +1,13 @@
+@import "_variables";
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  background-color: $bg-color;
+  font-weight: 400;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+  color: $site-text-color;
+}
