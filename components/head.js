@@ -20,6 +20,7 @@ const Head = props => (
     <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
     <link rel="icon" href="/static/favicon.ico" />
     <meta property="og:url" content={props.url || defaultOGURL} />
+    <meta name="google-site-verification" content="1lWHSm6U2pAykkfTxNDeX6UtRWeSjDD9gJRanRathwU" />
     <meta property="og:title" content={props.title || ''} />
     <meta
       property="og:description"
