@@ -1,14 +1,17 @@
 {
   "name": "create-next-example-app",
   "scripts": {
-    "dev": "next",
     "build": "next build",
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "export": "next export",
+    "dev": "node server.js"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "express": "^4.16.4",
     "next": "^8.1.0",
+    "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
